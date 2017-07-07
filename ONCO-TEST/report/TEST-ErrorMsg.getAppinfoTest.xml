@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="2" failures="6" hostname="quleideMacBook-Pro.local" name="ErrorMsg.getAppinfoTest" skipped="0" tests="19" time="5.237" timestamp="2017-07-06T09:41:04">
+  <properties>
+    <property name="ant.project.invoked-targets" value="junit" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib" />
+    <property name="java.vm.version" value="25.131-b11" />
+    <property name="ant.library.dir" value="/Users/qulei/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+    <property name="gopherProxySet" value="false" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="user.country" value="CN" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="user.dir" value="/Users/qulei/Documents/workspace/ONCO-TEST" />
+    <property name="java.runtime.version" value="1.8.0_131-b11" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="basedir" value="/Users/qulei/Documents/workspace/ONCO-TEST" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="os.arch" value="x86_64" />
+    <property name="ant.project.default-target" value="junit" />
+    <property name="java.io.tmpdir" value="/var/folders/g8/dq_kym7d16gd745vvf8q81fm0000gn/T/" />
+    <property name="ant.core.lib" value="/Users/qulei/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="ant.home" value="/Users/qulei/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327" />
+    <property name="ant.project.name" value="AntDemo" />
+    <property name="ant.file.type.AntDemo" value="file" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="java.library.path" value="/Users/qulei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.class.version" value="52.0" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="build.path" value="build" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="lib.path" value="lib" />
+    <property name="report.path" value="report" />
+    <property name="os.version" value="10.12.5" />
+    <property name="ant.file" value="/Users/qulei/Documents/workspace/ONCO-TEST/build.xml" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="user.home" value="/Users/qulei" />
+    <property name="user.timezone" value="" />
+    <property name="src.path" value="src" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="java.class.path" value="/Users/qulei/Documents/workspace/ONCO-TEST/lib/commons-codec-1.10.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/commons-codec-1.9.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/commons-collections4-4.1.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/commons-lang3-3.4.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/commons-logging-1.2.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/curvesapi-1.04.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/groovy-2.4.9.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/groovy-json-2.4.9.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/groovy-xml-2.4.9.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/hamcrest-core-1.3.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/hamcrest-library-1.3.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/httpclient-4.5.2.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/httpcore-4.4.4.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/httpmime-4.5.1.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/json-path-3.0.3.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/junit-4.12.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/jxls-2.4.0.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/jxls-jexcel-1.0.6.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/jxls-poi-1.0.12.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/jxls-reader-2.0.2.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/log4j-api-2.8.2.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/log4j-core-2.8.2.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/poi-3.17-beta1.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/poi-excelant-3.17-beta1.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/poi-ooxml-3.17-beta1.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/poi-ooxml-schemas-3.17-beta1.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/poi-scratchpad-3.17-beta1.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/rest-assured-3.0.3.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/tagsoup-1.2.1.jar:/Users/qulei/Documents/workspace/ONCO-TEST/lib/xmlbeans-2.6.0.jar:/Users/qulei/Documents/workspace/ONCO-TEST/build:/Users/qulei/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Users/qulei/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Users/qulei/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Users/qulei/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
+    <property name="user.name" value="qulei" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner ErrorMsg.getAppinfoTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/qulei/Documents/workspace/ONCO-TEST/report/TEST-ErrorMsg.getAppinfoTest.xml crashfile=/Users/qulei/Documents/workspace/ONCO-TEST/junitvmwatcher8231780408378591047.properties propsfile=/Users/qulei/Documents/workspace/ONCO-TEST/junit5761246203652758825.properties" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="user.language" value="zh" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="java.version" value="1.8.0_131" />
+    <property name="java.ext.dirs" value="/Users/qulei/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/classes" />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="file.separator" value="/" />
+    <property name="ant.file.AntDemo" value="/Users/qulei/Documents/workspace/ONCO-TEST/build.xml" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="sun.cpu.isalist" value="" />
+  </properties>
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[0]" time="2.478" />
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[1]" time="0.196" />
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[2]" time="0.162" />
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[3]" time="0.165" />
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[4]" time="0.183" />
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[5]" time="0.195">
+    <failure message="&#xa;Expected: &lt;1002&gt;&#xa;     but: was &lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
+Expected: &lt;1002&gt;
+     but: was &lt;0&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at ErrorMsg.getAppinfoTest.VerifyResponse(Unknown Source)
+</failure>
+  </testcase>
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[6]" time="0.164">
+    <failure message="&#xa;Expected: &lt;1002&gt;&#xa;     but: was &lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
+Expected: &lt;1002&gt;
+     but: was &lt;0&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at ErrorMsg.getAppinfoTest.VerifyResponse(Unknown Source)
+</failure>
+  </testcase>
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[7]" time="0.164" />
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[8]" time="0.158" />
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[9]" time="0.162" />
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[10]" time="0.012">
+    <error message="Illegal parameters passed to REST Assured. Parameters was: [tenantname=DrPeng-Dev, , startdate=2017-06-21T10:00:00Z, enddate=2017-06-27T10:00:00Z]" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal parameters passed to REST Assured. Parameters was: [tenantname=DrPeng-Dev, , startdate=2017-06-21T10:00:00Z, enddate=2017-06-27T10:00:00Z]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.RequestSpecificationImpl$_extractRequestParamsIfNeeded_closure28.doCall(RequestSpecificationImpl.groovy:1563)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:430)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2030)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:1890)
+	at org.codehaus.groovy.runtime.dgm$159.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:274)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at io.restassured.internal.RequestSpecificationImpl.extractRequestParamsIfNeeded(RequestSpecificationImpl.groovy:1558)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1218)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1725)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1731)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:168)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at ErrorMsg.getAppinfoTest.VerifyResponse(Unknown Source)
+</error>
+  </testcase>
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[11]" time="0.178">
+    <failure message="&#xa;Expected: &lt;1006&gt;&#xa;     but: was &lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
+Expected: &lt;1006&gt;
+     but: was &lt;0&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at ErrorMsg.getAppinfoTest.VerifyResponse(Unknown Source)
+</failure>
+  </testcase>
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[12]" time="0.158">
+    <failure message="&#xa;Expected: &lt;1006&gt;&#xa;     but: was &lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
+Expected: &lt;1006&gt;
+     but: was &lt;0&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at ErrorMsg.getAppinfoTest.VerifyResponse(Unknown Source)
+</failure>
+  </testcase>
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[13]" time="0.165" />
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[14]" time="0.004">
+    <error message="Illegal parameters passed to REST Assured. Parameters was: [tenantname=DrPeng-Dev, device=Branch1-WH-DEV, , enddate=2017-06-27T10:00:00Z]" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal parameters passed to REST Assured. Parameters was: [tenantname=DrPeng-Dev, device=Branch1-WH-DEV, , enddate=2017-06-27T10:00:00Z]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.RequestSpecificationImpl$_extractRequestParamsIfNeeded_closure28.doCall(RequestSpecificationImpl.groovy:1563)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:430)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2030)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:1890)
+	at org.codehaus.groovy.runtime.dgm$159.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:274)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at io.restassured.internal.RequestSpecificationImpl.extractRequestParamsIfNeeded(RequestSpecificationImpl.groovy:1558)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1218)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1725)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1731)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:168)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at ErrorMsg.getAppinfoTest.VerifyResponse(Unknown Source)
+</error>
+  </testcase>
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[15]" time="0.173">
+    <failure message="&#xa;Expected: &lt;1006&gt;&#xa;     but: was &lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
+Expected: &lt;1006&gt;
+     but: was &lt;0&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at ErrorMsg.getAppinfoTest.VerifyResponse(Unknown Source)
+</failure>
+  </testcase>
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[16]" time="0.158">
+    <failure message="&#xa;Expected: &lt;1006&gt;&#xa;     but: was &lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
+Expected: &lt;1006&gt;
+     but: was &lt;0&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at ErrorMsg.getAppinfoTest.VerifyResponse(Unknown Source)
+</failure>
+  </testcase>
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[17]" time="0.167" />
+  <testcase classname="ErrorMsg.getAppinfoTest" name="VerifyResponse[18]" time="0.164" />
+  <system-out><![CDATA[0行0 列 is String type
+0行1 列 is String type
+0行2 列 is String type
+0行3 列 is String type
+0行4 列 is String type
+0行5 列 is String type
+0行6 列 is String type
+0行7 列 is String type
+0行8 列 is String type
+0行9 列 is String type
+1行0 列 is Number type ; DateFormt:0.00
+1行1 列 is String type
+1行2 列 is String type
+1行3 列 is String type
+1行4 列 is String type
+1行5 列 is String type
+1行7 列 is Number type ; DateFormt:200.00
+1行8 列 is Number type ; DateFormt:0.00
+1行9 列 is String type
+2行0 列 is Number type ; DateFormt:1.00
+2行1 列 is String type
+2行2 列 is String type
+2行3 列 is String type
+2行4 列 is String type
+2行5 列 is String type
+2行6 列 is String type
+2行7 列 is Number type ; DateFormt:200.00
+2行8 列 is Number type ; DateFormt:1001.00
+2行9 列 is String type
+3行0 列 is Number type ; DateFormt:2.00
+3行1 列 is String type
+3行2 列 is String type
+3行3 列 is String type
+3行4 列 is String type
+3行5 列 is String type
+3行6 列 is String type
+3行7 列 is Number type ; DateFormt:200.00
+3行8 列 is Number type ; DateFormt:1001.00
+3行9 列 is String type
+4行0 列 is Number type ; DateFormt:3.00
+4行1 列 is String type
+4行2 列 is String type
+4行3 列 is String type
+4行4 列 is String type
+4行5 列 is String type
+4行7 列 is Number type ; DateFormt:200.00
+4行8 列 is Number type ; DateFormt:1001.00
+4行9 列 is String type
+5行0 列 is Number type ; DateFormt:4.00
+5行1 列 is String type
+5行2 列 is String type
+5行3 列 is String type
+5行4 列 is String type
+5行5 列 is String type
+5行7 列 is Number type ; DateFormt:200.00
+5行8 列 is Number type ; DateFormt:1002.00
+5行9 列 is String type
+6行0 列 is Number type ; DateFormt:5.00
+6行1 列 is String type
+6行2 列 is String type
+6行3 列 is String type
+6行4 列 is String type
+6行5 列 is String type
+6行7 列 is Number type ; DateFormt:200.00
+6行8 列 is Number type ; DateFormt:1002.00
+6行9 列 is String type
+7行0 列 is Number type ; DateFormt:6.00
+7行1 列 is String type
+7行2 列 is String type
+7行3 列 is String type
+7行4 列 is String type
+7行5 列 is String type
+7行7 列 is Number type ; DateFormt:200.00
+7行8 列 is Number type ; DateFormt:1002.00
+7行9 列 is String type
+8行0 列 is Number type ; DateFormt:7.00
+8行1 列 is String type
+8行2 列 is String type
+8行3 列 is String type
+8行4 列 is String type
+8行5 列 is String type
+8行7 列 is Number type ; DateFormt:200.00
+8行8 列 is Number type ; DateFormt:1004.00
+8行9 列 is String type
+9行0 列 is Number type ; DateFormt:8.00
+9行1 列 is String type
+9行2 列 is String type
+9行3 列 is String type
+9行4 列 is String type
+9行5 列 is String type
+9行7 列 is Number type ; DateFormt:200.00
+9行8 列 is Number type ; DateFormt:1004.00
+9行9 列 is String type
+10行0 列 is Number type ; DateFormt:9.00
+10行1 列 is String type
+10行2 列 is String type
+10行3 列 is String type
+10行4 列 is String type
+10行5 列 is String type
+10行7 列 is Number type ; DateFormt:200.00
+10行8 列 is Number type ; DateFormt:1005.00
+10行9 列 is String type
+11行0 列 is Number type ; DateFormt:10.00
+11行1 列 is String type
+11行2 列 is String type
+11行3 列 is String type
+11行4 列 is String type
+11行5 列 is String type
+11行7 列 is Number type ; DateFormt:200.00
+11行8 列 is Number type ; DateFormt:1005.00
+11行9 列 is String type
+12行0 列 is Number type ; DateFormt:11.00
+12行1 列 is String type
+12行2 列 is String type
+12行3 列 is String type
+12行4 列 is String type
+12行5 列 is String type
+12行7 列 is Number type ; DateFormt:200.00
+12行8 列 is Number type ; DateFormt:1006.00
+12行9 列 is String type
+13行0 列 is Number type ; DateFormt:12.00
+13行1 列 is String type
+13行2 列 is String type
+13行3 列 is String type
+13行4 列 is String type
+13行5 列 is String type
+13行7 列 is Number type ; DateFormt:200.00
+13行8 列 is Number type ; DateFormt:1006.00
+13行9 列 is String type
+14行0 列 is Number type ; DateFormt:13.00
+14行1 列 is String type
+14行2 列 is String type
+14行3 列 is String type
+14行4 列 is String type
+14行5 列 is String type
+14行7 列 is Number type ; DateFormt:200.00
+14行8 列 is Number type ; DateFormt:1006.00
+14行9 列 is String type
+15行0 列 is Number type ; DateFormt:14.00
+15行1 列 is String type
+15行2 列 is String type
+15行3 列 is String type
+15行4 列 is String type
+15行5 列 is String type
+15行7 列 is Number type ; DateFormt:200.00
+15行8 列 is Number type ; DateFormt:1006.00
+15行9 列 is String type
+16行0 列 is Number type ; DateFormt:15.00
+16行1 列 is String type
+16行2 列 is String type
+16行3 列 is String type
+16行4 列 is String type
+16行5 列 is String type
+16行7 列 is Number type ; DateFormt:200.00
+16行8 列 is Number type ; DateFormt:1006.00
+16行9 列 is String type
+17行0 列 is Number type ; DateFormt:16.00
+17行1 列 is String type
+17行2 列 is String type
+17行3 列 is String type
+17行4 列 is String type
+17行5 列 is String type
+17行7 列 is Number type ; DateFormt:200.00
+17行8 列 is Number type ; DateFormt:1006.00
+17行9 列 is String type
+18行0 列 is Number type ; DateFormt:17.00
+18行1 列 is String type
+18行2 列 is String type
+18行3 列 is String type
+18行4 列 is String type
+18行5 列 is String type
+18行7 列 is Number type ; DateFormt:200.00
+18行8 列 is Number type ; DateFormt:1006.00
+18行9 列 is String type
+19行0 列 is Number type ; DateFormt:18.00
+19行1 列 is String type
+19行2 列 is String type
+19行3 列 is String type
+19行4 列 is String type
+19行5 列 is String type
+19行7 列 is Number type ; DateFormt:200.00
+19行8 列 is Number type ; DateFormt:1006.00
+19行9 列 is String type
+]]></system-out>
+  <system-err><![CDATA[ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console. Set system property 'org.apache.logging.log4j.simplelog.StatusLogger.level' to TRACE to show Log4j2 internal initialization logging.
+]]></system-err>
+</testsuite>
