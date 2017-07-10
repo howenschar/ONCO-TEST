@@ -81,7 +81,7 @@ public class getAppinfoTest {
 		}.getClassName();
 		logger.info(filename);
 		filename = filename.replace('.', '/');
-		File file = new File("/Users/qulei/Documents/workspace/ONCO-TEST/bin/" + filename + ".xlsx");
+		File file = new File("src/" + filename + ".xlsx");
 		logger.info(file.getAbsolutePath());
 		ArrayList<ArrayList<Object>> data = parseEXCEL.readExcel(file);
 		// logger.info("data size: " + data.size());

@@ -75,7 +75,7 @@ public class getDevReachInfoTest {
 		}.getClassName();
 		logger.info(filename);
 		filename = filename.replace('.', '/');
-		File file = new File("/Users/qulei/Documents/workspace/ONCO-TEST/bin/" + filename + ".xlsx");
+		File file = new File("src/" + filename + ".xlsx");
 		logger.info(file.getAbsolutePath());
 		ArrayList<ArrayList<Object>> data = parseEXCEL.readExcel(file);
 		Object[][] returnData = new Object[data.size() - 1][data.get(0).size()];
